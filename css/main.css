@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+button {
+    margin: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    width: 250px;
+    padding: 10px;
+
+    justify-content: center;
+}
+
+title{
+  text-align: center;
+}
+
+button{
+  
+}
+
+.stack-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px;
+    margin: auto;
+    
+    width: fit-content;
+    min-width: 250px;
+    border: 2px solid #196f94;
+    border-top: 0;
+}
+
+.buttons {
+    display: flex;
+    margin: auto;
+    width: 100vh;
+
+    padding: 20px;
+
+    justify-content: center;
+    align-items: center;
+}
