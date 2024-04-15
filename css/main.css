@@ -1,9 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-}
-
-button {
-    margin: 5px;
+    background-image: linear-gradient(to right, #FFC133 , #FFA933);
 }
 
 ul {
@@ -18,17 +15,20 @@ li {
     border: 1px solid #ccc;
     width: 250px;
     padding: 10px;
-
     justify-content: center;
 }
 
 title{
-  text-align: center;
+    text-align: center;
+
 }
 
-button{
-  
+h3{
+    text-align: center;
+    padding: 200px;
+
 }
+
 
 .stack-container {
     display: grid;
@@ -43,8 +43,25 @@ button{
     
     width: fit-content;
     min-width: 250px;
-    border: 2px solid #196f94;
+    border: 2px solid black;
     border-top: 0;
+}
+.stack-container-queue {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px;
+    margin: auto;
+    
+    width: fit-content;
+    min-width: 250px;
+    border: 2px solid black;
+    border-top: 0;
+    border-bottom: 0;
 }
 
 .buttons {
@@ -56,4 +73,29 @@ button{
 
     justify-content: center;
     align-items: center;
+}
+button  {
+    margin: 55px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 120px;
+    border: none;
+    background-color: #7FE449;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px #67C634;    ;
+    transition: all 0.3s ease 0s;
+}
+button:hover {
+    background-color: #67C634;
+}
+
+#next {
+    position: fixed; /* o absolute, dependiendo de tu layout */
+    right: 10px;
+    bottom: 10px;
+    background-color: #7FE449;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    width: 40px;
 }

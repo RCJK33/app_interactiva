@@ -1,5 +1,5 @@
-const stack = [];
-const queue = [];
+const stack = ['0_0', 'X_X', '*_*'];
+const queue = ['0_0', 'X_X', '*_*'];
 const stackEl = document.getElementById("stack");
 const queueEl = document.getElementById("queue");
 
@@ -36,6 +36,7 @@ document.getElementById("stack-pop").addEventListener("click", () => {
   renderStack();
 });
 
+/*
 document.getElementById("queue-enqueue").addEventListener("click", () => {
   const value = prompt("Enter a value to enqueue:");
   queue.push(value);
@@ -50,6 +51,7 @@ document.getElementById("queue-dequeue").addEventListener("click", () => {
   queue.shift();
   renderQueue();
 });
-
+*/
 renderStack();
-renderQueue();
+
+//renderQueue();
