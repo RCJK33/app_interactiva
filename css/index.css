@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Futuristic_Armour';
+    src: url(/Futuristic_Armour.otf);
+}
+body {
+    font-family: 'Futuristic_Armour', Arial, sans-serif;
+    font-size: 1px;
+    background-color: #000
+}
+
+.Disco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    width: 280px;
+    height: 10px;
+    position: fixed;
+    top: 37%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn button {
+    font-family: 'Futuristic_Armour', Arial, sans-serif;
+    font-size: 32px;
+    color: #ddd;
+    background-color: #000;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 250px;
+    height: 50px;
+    justify-content: center;
+}
+.conexion{
+    position: absolute;
+    top: 377px;
+    left: 810px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 180px;
+
+}
+.grp-arrizq{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.grp-arrizq img {
+    width: 180px;
+}
+.grp-arrder{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.grp-arrder img {
+    width: 30px;
+    margin-top: 10px;
+    
+}
+
+.flechasizq{
+    width: 150px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+
+    
+}
+
+.grp-abaizq{
+    width: 180px;
+    position: absolute;
+    bottom: 50px;
+    left:  10px;
+}

@@ -1,43 +1,36 @@
 
-const stack = ['0_0', 'X_X', '*_*'];
-const queue = ['0_0', 'X_X', '*_*'];
-const stackEl = document.getElementById("stack");
+const queue = ["img/disco.png", "img/disco.png"];
 const queueEl = document.getElementById("queue");
 
-function renderStack() {
-  stackEl.innerHTML = "";
-  for (let i = stack.length - 1; i >= 0; i--) {
-    const li = document.createElement("li");
-    li.textContent = stack[i];
-    stackEl.appendChild(li);
-  }
-}
-
 function renderQueue() {
-  queueEl.innerHTML = "";
+  queueEl.innerHTML = ""; 
   for (let i = 0; i < queue.length; i++) {
-    const li = document.createElement("li");
-    li.textContent = queue[i];
-    queueEl.appendChild(li);
+    const img = document.createElement("img");
+    img.src = queue[i];
+    queueEl.appendChild(img);
   }
 }
-
 
 document.getElementById("queue-enqueue").addEventListener("click", () => {
-  const value = prompt("Enter a value to enqueue:");
-  queue.push(value);
+  if (queue.length >= 5) {
+    alert("La cola ya tiene 6 elementos!");
+    return;
+  }
+
+  // La URL de la imagen a agregar es 'img/Recurso_11.png'
+  const imageUrl = 'img/Recurso_11.png';
+  queue.unshift(imageUrl); // Agrega el elemento al inicio de la cola
   renderQueue();
 });
 
 document.getElementById("queue-dequeue").addEventListener("click", () => {
   if (queue.length === 0) {
-    alert("Queue is empty!");
+    alert("La cola está vacía!");
     return;
   }
-  queue.shift();
+  queue.pop();
   renderQueue();
 });
 
-renderStack();
 
-//renderQueue();
+renderQueue();
