@@ -1,5 +1,5 @@
 
-const queue = ["img/disco.png", "img/disco.png"];
+const queue = ["img/disco_i.png" ];
 const queueEl = document.getElementById("queue");
 
 function renderQueue() {
@@ -12,13 +12,13 @@ function renderQueue() {
 }
 
 document.getElementById("queue-enqueue").addEventListener("click", () => {
-  if (queue.length >= 5) {
+  if (queue.length >= 6) {
     alert("La cola ya tiene 6 elementos!");
     return;
   }
 
   // La URL de la imagen a agregar es 'img/Recurso_11.png'
-  const imageUrl = 'img/Recurso_11.png';
+  const imageUrl = 'img/disco.png';
   queue.unshift(imageUrl); // Agrega el elemento al inicio de la cola
   renderQueue();
 });
