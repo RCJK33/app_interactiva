@@ -5,31 +5,94 @@
 body{
     background-color: #000;
 }
-
-.stack-izq{
-    position: absolute;
-    width: 800px;
-    height: 500px;
-    top: 25px;
-    left: 300px;
-}
 .superior{
     position: absolute;
-    width: 100%;
+    width: 90%;
     top: 20px;
+    left: 5%;
 }
+.container{
+    background-color: #191919;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 45%;
+    height: 88%; 
+    position: fixed;
+    top: 50%; 
+    left: 50%; 
+    border-radius: 40px;
+    transform: translate(-50%, -50%);
+
+}
+.stack-izq{
+    position: absolute;
+    width: 90%;
+    height: 70%;
+    top: 11%;
+    left: 5%;
+    z-index: 1;
+}
+
+.stack-container {
+    background-color: #191919; 
+    display: flex; 
+    flex-direction:column-reverse;
+    justify-content:flex-start;
+    align-items: center;
+    width: 70%;
+    height: 55%;
+    position: absolute;
+}
+
+.stack-container img {
+    margin-bottom: 0%;
+    width: 60%;
+}
+.buttons-stack {
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    z-index: 1;
+}
+
+#stack-push, #stack-pop {
+    color: #191919; 
+    background-color: #d2d2d2;
+    border-radius: 6px;
+    margin-left: 32%;
+    margin-right: 32%;
+    width: 200px;
+    height: 30px;
+    font-size: 17px;
+    font-family: 'Futuristic_Armour', Arial, sans-serif;
+
+}
+#stack-push:hover, #stack-pop:hover {
+    color: #d2d2d2;
+    background-color: #191919;
+}
+
 h1{
-    color: #fff;
-    margin-top: 50px;
-    font-size: 50px;
+    position:fixed;
+    color:#fff;
+    font-size: 35px;
     font-family: 'Futuristic_Armour', Arial, sans-serif;
     text-align: center;
+    top: 0%;
+    left: 25%;
 }
+
 .ico-ext{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 20%;
-    width: 840px;
+    width: 62%;
 
     
 }
@@ -39,3 +102,6 @@ h1{
     top: 50%;
     right: 92%;
 }
+
+
+

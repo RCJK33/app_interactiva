@@ -86,13 +86,18 @@ body{
 
 .stack-container-queue {
     background-color: #191919; 
-    display: flex;   
+    display: flex; 
+    justify-content:flex-start; 
+    align-items: center;
+    width: 70%;
+    position: absolute;
 }
 
 .stack-container-queue img {
-    margin-left: 60px; 
-    width: 100px; 
-    height: 100px;
+    margin-left: 20px; 
+    margin-right: 20px;
+    width: 9%;
+    height: 9%;
 }
 
 .buttons{
